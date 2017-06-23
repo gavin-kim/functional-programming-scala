@@ -1,10 +1,25 @@
 package c3_FunctionalDataStructure
 
 /**
-  * Keywords
+  * * companion object
+  * An object with the same name as a class or trait.
+  * It's defined in the same source file and has static methods.
+  *
+  *
+  * *case class
+  *
+  * 1. can be pattern matching
+  * 2. automatically define hashcode and equals
+  * 3. automatically define getter methods for the constructor arguments
+  *    (setter methods are generated when var is specified for the constructor arguments)
+  * 4. automatically create a companion object with the same name as the class,
+  *    which contains apply() and unapply().
+  *    (apply() enables constructing without new, unapply() enables the pattern matching)
+  *
+  * *Keywords
   *
   * trait: An abstract interface that may optionally contain implementations of some methods
-  * sealed: All implementations must be declared in this file.
+  * sealed: All implementations must be declared in the same file.
   * case: Implementations or data constructors to represent possible forms the List can take
   *
   * Cons[]: traditionally short for construct
@@ -16,7 +31,7 @@ package c3_FunctionalDataStructure
   * So Nil can be considered a List[Int] or List[Double] etc...
   *
   *
-  * Pattern matching
+  * *Pattern matching
   *
   * case _ :any expression and you don't need to capture _
   * case x : any expression but you can capture variable x
