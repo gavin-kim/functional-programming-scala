@@ -1,6 +1,4 @@
-package c4_HandlingErrorsWithoutExceptions
-
-import scala.util.Try
+package C4_HandlingErrorsWithoutExceptions
 
 /**
   * Throw exceptions only for no recoverable errors

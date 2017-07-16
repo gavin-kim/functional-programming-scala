@@ -1,4 +1,4 @@
-package c2_GettingStarted // _ bring all members of Listing2_1
+package C2_GettingStarted // _ bring all members of Listing2_1
 
 /**
   * object keyword creates a new singleton type

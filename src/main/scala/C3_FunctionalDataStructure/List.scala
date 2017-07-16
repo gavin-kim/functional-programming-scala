@@ -1,4 +1,4 @@
-package c3_FunctionalDataStructure
+package C3_FunctionalDataStructure
 
 /**
   * * companion object
@@ -178,15 +178,17 @@ object List {
     *
     * foldLeft() with Tail-recursive
     *
-    *      L -> R         L <- R
-    *     foldLeft      foldRight
-    *        f              f
-    *       / \            / \
-    *      f  3           1  f
-    *     / \               / \
-    *    f  2              2  f
-    *   / \                  / \
-    * acc 1                 3  acc
+    *  L -> R
+    *  foldLeft
+    *  rec(t, f(acc, h))
+    *  Tail-Recursive
+    *  f completes before the next recursions
+    *
+    *  L <- R
+    *  foldRight
+    *  f(h, rec(t, acc))
+    *  Head-Recursive
+    *  f completes after all recursion complete (the last recursion evaluates first)
     *
     * */
   @annotation.tailrec
@@ -207,7 +209,7 @@ object List {
 
   /**
     * The implementation of 'foldRight' in terms of 'reverse' and 'foldLeft'
-    * is common trick ofr avoiding stack overflows when implementing a strict 'foldRight'
+    * is common trick of avoiding stack overflows when implementing a strict 'foldRight'
     * */
   def foldRightViaFoldLeft[A, B] (l: List[A], acc: B)(f: (A, B) => B): B =
     foldLeft(reverse(l), acc)((b, a) => f(a, b))

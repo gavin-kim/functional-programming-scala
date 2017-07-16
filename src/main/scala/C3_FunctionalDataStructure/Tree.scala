@@ -1,4 +1,4 @@
-package c3_FunctionalDataStructure
+package C3_FunctionalDataStructure
 
 /**
   * A simple binary tree

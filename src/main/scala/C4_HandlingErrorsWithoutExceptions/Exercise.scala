@@ -1,4 +1,4 @@
-package c4_HandlingErrorsWithoutExceptions
+package C4_HandlingErrorsWithoutExceptions
 
 /**
   * Sentinel value (using specific value) VS  Option type (using Wrapper)

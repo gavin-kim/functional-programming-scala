@@ -1,4 +1,4 @@
-package c2_GettingStarted
+package C2_GettingStarted
 
 object Exercise {
 
